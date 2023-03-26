@@ -27,14 +27,14 @@ export default class Studentlist extends Component {
   render() {
     return (
       <div>
-        <h5 className='ls-2 mt-2 animate-charcter'>คำแนะนำที่มี</h5>
-        <Table striped bordered hover>
+        <h5 className='ls-2 mt-2 animate-charcter'>Favorite movie/series list</h5>
+        <Table striped bordered hover variant="dark">
           <thead>
             <tr>
-              <th className='ls-2 mt-2 animate-charcter-1'>ลำดับที่</th>
-              <th className='ls-2 mt-2 animate-charcter-1'>คำแนะนำ</th>
-              <th className='ls-2 mt-2 animate-charcter-1'>ชื่อ</th>
-              <th className='ls-2 mt-2 animate-charcter-1'>อีเมลล์</th>
+              <th className='ls-2 mt-2 animate-charcter-1'>number</th>
+              <th className='ls-2 mt-2 animate-charcter-1'>advice</th>
+              <th className='ls-2 mt-2 animate-charcter-1'>title</th>
+              <th className='ls-2 mt-2 animate-charcter-1'>see at</th>
             </tr>
           </thead>
           <tbody>
@@ -45,12 +45,6 @@ export default class Studentlist extends Component {
                   <td className='m-0 slide-In-Bottom'>{res.advice}</td>
                   <td className='m-0 slide-In-Bottom'>{res.firstname}</td>
                   <td className='m-0 slide-In-Bottom'>{res.email}</td>
-                  {/* <td>
-                    <Link className='btn btn-warning sm' to={"/edit-student/" + res._id}>Edit</Link> 
-                    {' '}
-                    <Button className='btn btn-danger sm' onClick={() => { window.confirm('Are you sure delete?') && 
-                    this.deteteStudent(res._id)}}>Delete</Button>
-                  </td> */}
                 </tr>
                 ))}
           </tbody>

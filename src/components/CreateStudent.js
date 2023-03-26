@@ -43,20 +43,20 @@ class CreateStudent extends Component {
       <div>
         <Form onSubmit={this.onSubmit}>
             <Form.Group>
-                <Form.Label className='m-0 slide-In-Bottom'>คำแนะนำ</Form.Label>
+                <Form.Label className='m-0 slide-In-Bottom'>Advice</Form.Label>
                 <Form.Control type='text' value={this.state.advice} onChange={this.onChangeStudentAdvice}/>
             </Form.Group>
             <Form.Group>
-                <Form.Label className='m-0 slide-In-Bottom'>ชื่อ</Form.Label>
+                <Form.Label className='m-0 slide-In-Bottom'>Title</Form.Label>
                 <Form.Control type='text'value={this.state.firstname} onChange={this.onChangeStudentFirstname}/>
             </Form.Group>
             <Form.Group>
-                <Form.Label className='m-0 slide-In-Bottom'>อีเมลล์</Form.Label>
-                <Form.Control type='email'value={this.state.email} onChange={this.onChangeStudentEmail}/>
+                <Form.Label className='m-0 slide-In-Bottom'>See At</Form.Label>
+                <Form.Control type='text'value={this.state.email} onChange={this.onChangeStudentEmail}/>
             </Form.Group>
             <Form.Group className="text-center mt-3">
                 <Button className='m-0 slide-In-Bottom' variant='primary' type='submit'>
-                    บันทึก
+                record
                 </Button> 
             </Form.Group>      
         </Form>
